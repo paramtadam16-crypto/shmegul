@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой сайт</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top right, #1a233a, #0b0e14);
+      color: #e6edf3;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(22, 27, 34, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 32px 28px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 20px;
+    }
+
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #58a6ff;
+      box-shadow: 0 0 20px rgba(88, 166, 255, 0.4);
+    }
+
+    h1 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #ffffff;
+      background: #21262d;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.02);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-steam:hover {
+      background: #171a21;
+      color: #66c0f4;
+      box-shadow: 0 0 16px rgba(102, 192, 244, 0.25);
+    }
+
+    .btn-discord:hover {
+      background: #5865f2;
+      box-shadow: 0 0 16px rgba(88, 101, 242, 0.35);
+    }
+
+    .btn-twitch:hover {
+      background: #9146ff;
+      box-shadow: 0 0 16px rgba(145, 70, 255, 0.35);
+    }
+
+    .footer-note {
+      font-size: 0.72rem;
+      color: #484f58;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar-wrapper">
+      <img src="https://avatars.steamstatic.com/a2d71d39330f28f449732e9596c7110014e893c5_full.jpg" alt="Avatar">
+    </div>
+
+    <h1>короче это моя страничка</h1>
+    <p class="subtitle">надеюсь получилось хорошо</p>
+
+    <div class="links">
+      <a href="https://steamcommunity.com/profiles/76561198751064696/" target="_blank" class="btn btn-steam">
+        <i class="fa-brands fa-steam"></i> Профиль Steam
+      </a>
+      <a href="https://discord.com/invite/RKFGxZP6C" target="_blank" class="btn btn-discord">
+        <i class="fa-brands fa-discord"></i> Discord (сервер с CS:GO)
+      </a>
+      <a href="https://www.twitch.tv/heyz3m" target="_blank" class="btn btn-twitch">
+        <i class="fa-brands fa-twitch"></i> Twitch
+      </a>
+    </div>
+
+    <div class="footer-note">я хуесос</div>
+  </div>
+
+</body>
+</html>
